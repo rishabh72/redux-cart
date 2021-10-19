@@ -1,0 +1,47 @@
+.header {
+  padding: 2rem 0;
+  font-size: 2rem;
+  background-color: yellow;
+  height: 12%;
+}
+
+.header__content {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header__logo-box {
+  margin-right: auto;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.header__btn {
+  text-decoration: none;
+  padding: 0 1.5rem;
+  color: #000;
+  position: relative;
+}
+
+.header__btn-badge {
+  background-color: #0f52ba;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 7px;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
