@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
 import ProductsList from '../components/ProductsList';
-import './CartScreen.css';
 
 const Cart = () => {
   const cartList = useSelector((state) => state.products.cart);
@@ -11,17 +10,17 @@ const Cart = () => {
 
   if (cartList.length === 0) {
     return (
-      <div className='center'>
-        <div className='center__text'>No Items in Cart!</div>
+      <div>
+        <div>No Items in Cart!</div>
       </div>
     );
   }
   return (
     <div className='content'>
       {total > 0 && (
-        <div className='total'>
-          <div className='total__text'>Total Amount</div>
-          <div className='total__text'>${total}</div>
+        <div className=' max-w-sm w-full rounded justify-between mx-auto flex text-white bg-blue-500 px-5 py-3'>
+          <div className=' text-xl'>Total Amount</div>
+          <div className=' text-xl'>${total}</div>
         </div>
       )}
       <ProductsList list={cartList} />

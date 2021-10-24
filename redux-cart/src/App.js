@@ -8,6 +8,7 @@ function App() {
   return (
     <div style={{ height: '100vh' }}>
       <Header />
+      <div className='h-24'>&nbsp;</div>
       <main style={{ height: '88%' }}>
         <Switch>
           <Route path='/' exact>

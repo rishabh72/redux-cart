@@ -1,9 +1,8 @@
 import Product from './Product';
-import './ProductsList.css';
 
 const ProductsList = ({ list }) => {
   return (
-    <div className='productsList'>
+    <div className=' mx-auto flex flex-wrap'>
       {list.map((item) => {
         return (
           <Product
